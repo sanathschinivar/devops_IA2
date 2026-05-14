@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = 'Docker-credentials' 
-        IMAGE_NAME = 'YOUR_USERNAME/new_docker_image' 
+        IMAGE_NAME = 'sanath_15/new_docker_image' 
     }
     stages {
         stage('Build Java') { steps { bat 'javac HelloWorld.java' } }
